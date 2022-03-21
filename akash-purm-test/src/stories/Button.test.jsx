@@ -11,21 +11,12 @@ test("test2", () => {
   const { queryByText } = render(<Primary {...Primary.args} />);
   const button = queryByText("Click Me");
   fireEvent.click(button);
-  expect(screen.getByRole("button")).toHaveTextContent(/Click Me/i);
+  expect(screen.getByRole("button")).toHaveTextContent(/Thank You/i);
 });
 
 test("test3", () => {
   const { queryByText } = render(<Primary {...Primary.args} />);
   const button = queryByText("Click Me");
-  fireEvent.click(button);
-  fireEvent.click(button);
-  expect(screen.getByRole("button")).toHaveTextContent(/Thank You/i);
-});
-
-test("test4", () => {
-  const { queryByText } = render(<Primary {...Primary.args} />);
-  const button = queryByText("Click Me");
-  fireEvent.click(button);
   fireEvent.click(button);
   fireEvent.click(button);
   expect(screen.getByRole("button")).toHaveTextContent(/Click Me/i);
