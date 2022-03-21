@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { within, userEvent } from "@storybook/testing-library";
 import { Button } from "./Button";
 
 export default {
   title: "Example/Button",
   component: Button,
 };
-
-// const Template = (args) => <Button {...args} />;
 
 export const Primary = () => {
   const [value, setValue] = useState("Click Me");
