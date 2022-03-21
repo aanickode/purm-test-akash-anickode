@@ -1,5 +1,5 @@
 {
-  "name": "test-problem",
+  "name": "akash-purm-test",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,6 +15,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
   },
@@ -54,7 +55,7 @@
     "@storybook/builder-webpack5": "^6.4.19",
     "@storybook/manager-webpack5": "^6.4.19",
     "@storybook/node-logger": "^6.4.19",
-    "@storybook/preset-create-react-app": "^4.0.1",
+    "@storybook/preset-create-react-app": "^4.1.0",
     "@storybook/react": "^6.4.19",
     "@storybook/testing-library": "^0.0.9",
     "webpack": "^5.70.0"
